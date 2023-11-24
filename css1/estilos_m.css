@@ -1,0 +1,109 @@
+@charset "UTF-8";
+ * {
+  padding: 0;
+  margin: 0;
+}
+/* Backgrounds */
+
+
+body{
+
+   width: 100%;
+   height: 100%;
+   font-family: sans-serif;
+   letter-spacing: 0.03em;
+   line-height: 1.6;
+}
+
+.item {
+   width: auto;
+   max-width: auto;
+   height: auto;
+   display: flex;
+   flex-wrap:wrap;
+   justify-content: center;
+   overflow: hidden;
+}
+.item .card coco{
+   width: auto;
+   max-width: auto;
+   height: auto;
+   display: flex;
+   flex-wrap:wrap;
+   justify-content: center;
+   overflow: hidden;
+}
+
+.item .card:hover{
+   background-color: #e6e6e6;
+}
+
+.item .card img{
+   width: 296px;
+   height: 290px;
+
+}
+.item .card h3{
+   font-weight: 600;
+}
+.item .card h5{
+   font-weight: 600;
+}
+.item .card p{
+   padding: 0.2rem;
+   font-weight: 600;
+   font-size: 14px;
+
+}
+.item .card a{
+   font-weight: 500;
+   text-decoration: none;
+   color: rgb(0, 255, 187);
+   
+}
+
+
+.modal-backdrop {
+   display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.zoom {
+   display: inline-block;
+   position: relative;
+ }
+ 
+ .zoom img {
+   transition: transform 0.5s; /* Agrega una transición para el efecto de zoom */
+ }
+ 
+ .zoom:hover img {
+   transform: scale(1.2); /* Escala la imagen en un 20% cuando el mouse se posa sobre la imagen */
+ }
+ 
+ .zoom::before {
+   content: ""; /* Crea un elemento pseudo-antes para agregar un borde alrededor de la imagen */
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   border: 2px solid #000; /* Agrega un borde negro alrededor de la imagen */
+   opacity: 0; /* Oculta el borde por defecto */
+   transition: opacity 0.5s; /* Agrega una transición para la opacidad del borde */
+ }
+ 
+ .zoom:hover::before {
+   opacity: 1; /* Muestra el borde con una opacidad del 100% cuando el mouse se posa sobre la imagen */
+ }
+ 
+

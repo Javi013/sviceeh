@@ -1,0 +1,22 @@
+/* CSS Document */
+
+.fondo_banner{ /*background-color:#5C94BF #005500 #007200*/ background-color:yellow }
+.fondo_menu{ background:gray; color:gray; font-weight:bold}
+.subrayado a:link, a:hover{text-decoration:none }
+body{background-image: url('../assents/avatar/empresa.jpg');}
+.contenedor_principal{background-color:#007200}
+.contenido{ background-color: #FFFFFF}
+/* ----REGLAS DEL FORMULARIO PARA VALIDACION ---------------------------------------------------------------- */
+label.error{ color: red;
+  display: block;
+  margin-top: 5px
+ }
+
+ input.error{ border: 1px dashed red;
+ color: red }
+  select.error{ border: 1px dashed red;
+ color: red }
+ input[type="radio"].error{ background-color:red }
+ textarea.error{ border: 1px dashed red;
+ color: red }
+
